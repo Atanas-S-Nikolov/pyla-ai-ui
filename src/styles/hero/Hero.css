@@ -1,0 +1,15 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10rem;
+  font-size: xx-large;
+}
+
+.headings {
+  margin-top: 6rem;
+  line-height: 75%;
+}
+
+.hero_img {
+  filter: brightness(.7) contrast(.95);
+}

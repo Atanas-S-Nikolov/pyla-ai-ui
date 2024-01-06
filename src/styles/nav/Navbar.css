@@ -15,14 +15,22 @@
   gap: 2em;
 }
 
-.join_discord_btn {
-  background-color: #5865f2;
-  color: white;
-  padding: 1em 2em;
-  border-radius: 10px;
+.nav .link, .join_discord_btn{
   opacity: .9;
 }
 
-.join_discord_btn:hover {
+.join_discord_btn {
+  background-color: #5865f2;
+  color: white;
+  padding: .9em 1.8em;
+  border-radius: 10px;
+}
+
+.discord_logo {
+  margin-right: 1rem;
+  font-size: larger;
+}
+
+.nav .link:hover, .join_discord_btn:hover {
   opacity: 1;
 }

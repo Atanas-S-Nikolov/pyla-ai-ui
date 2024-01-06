@@ -1,5 +1,9 @@
 :root {
+  font-family: 'Inter', sans-serif;
   font-size: larger;
+  font-weight: 500;
+  color-scheme: dark;
+  background-color: #151515;
 }
 
 body {
