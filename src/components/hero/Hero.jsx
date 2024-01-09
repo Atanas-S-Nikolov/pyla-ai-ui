@@ -6,7 +6,7 @@ export default function Hero() {
     <section className="hero">
       <section className="headings">
         <h2>PylaAI</h2>
-        <p>Gamming scripts</p>
+        <p>Gaming scripts</p>
       </section>
       <img className='hero_img' src={heroImg} alt="Hero image"/>
     </section>

@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   padding: 2em 10em;
-  border-bottom: 1px solid rgba(255, 255, 255, .9);
+  border-bottom: 1px solid rgba(255, 255, 255, .85);
 }
 
 .logo {
@@ -21,7 +21,7 @@
 }
 
 .nav .link, .join_discord_btn{
-  opacity: .9;
+  opacity: .85;
 }
 
 .join_discord_btn {
@@ -38,7 +38,7 @@
 }
 
 .nav .link:hover {
-  border-color: rgba(255, 255, 255, .9);
+  border-color: rgba(255, 255, 255, .85);
 }
 
 .nav .link:hover, .join_discord_btn:hover {
