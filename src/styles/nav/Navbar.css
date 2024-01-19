@@ -1,8 +1,8 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 2em 10em;
-  border-bottom: 1px solid rgba(255, 255, 255, .85);
+  padding: 2em 10%;
+  border-bottom: 1px solid var(--header-color);
 }
 
 .logo {
@@ -13,6 +13,15 @@
 .nav {
   display: inherit;
   gap: 2em;
+}
+
+.menu_button {
+  display: none;
+}
+
+.nav, .menu_button {
+  margin-left: auto;
+  margin-right: 2em;
 }
 
 .nav .link {
@@ -38,9 +47,69 @@
 }
 
 .nav .link:hover {
-  border-color: rgba(255, 255, 255, .85);
+  border-color: var(--header-color);
 }
 
 .nav .link:hover, .join_discord_btn:hover {
   opacity: 1;
+}
+
+@media (max-width: 1300px) {
+  .header {
+    padding: 2em 5%;
+  }
+}
+
+@media (max-width: 1140px) {
+  .menu_button{
+    display: inherit;
+    font-size: x-large;
+    background-color: lightslategrey;
+    padding: .5em;
+    margin-top: -.5em;
+    border-radius: 5px;
+    align-items: center;
+  }
+
+  .nav {
+    flex-direction: column;
+    position: absolute;
+    margin-top: 3.9em;
+    margin-right: 0;
+    padding: 2em 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0px 15px 30px -15px rgba(0, 0, 0, 1);
+  }
+
+  .nav .link {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .menu_button, .join_discord_btn, .discord_logo {
+    font-size: large;
+  }
+
+  .discord_logo {
+    margin: 0;
+  }
+
+  .join_discord_text {
+    display: none;
+  }
+
+  .join_discord_btn {
+    padding: .6em;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu_button {
+    margin-right: 1em;
+  }
 }

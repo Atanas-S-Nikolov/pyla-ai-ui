@@ -8,7 +8,9 @@ export default function Hero() {
         <h2>PylaAI</h2>
         <p>Gaming scripts</p>
       </section>
-      <img className='hero_img' src={heroImg} alt="Hero image"/>
+      <div>
+        <img className='hero_img' src={heroImg} alt="Hero image"/>
+      </div>
     </section>
   )
 }

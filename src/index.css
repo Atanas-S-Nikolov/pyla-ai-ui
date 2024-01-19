@@ -1,4 +1,5 @@
 :root {
+  --header-color: rgba(255, 255, 255, .85);
   font-family: 'Inter', sans-serif;
   font-size: larger;
   font-weight: 500;
@@ -14,4 +15,8 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+img {
+  max-width: 100%;
 }
