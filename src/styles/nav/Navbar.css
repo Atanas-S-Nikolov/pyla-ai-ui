@@ -13,6 +13,11 @@
 .nav {
   display: inherit;
   gap: 2em;
+  transition: opacity .3s linear;
+}
+
+.hidden_el {
+  opacity: 0;
 }
 
 .menu_button {
@@ -69,6 +74,10 @@
     margin-top: -.5em;
     border-radius: 5px;
     align-items: center;
+  }
+
+  .menu_icon {
+    aspect-ratio: 1 / 1;
   }
 
   .nav {
