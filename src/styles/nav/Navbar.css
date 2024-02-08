@@ -41,14 +41,14 @@
 .join_discord_btn {
   background-color: #5865f2;
   color: white;
-  padding: .9em 1.8em;
+  padding: .9em;
   border-radius: 10px;
   transition: opacity .5s;
+  font-size: large;
 }
 
 .discord_logo {
-  margin-right: 1rem;
-  font-size: larger;
+  margin-right: .75rem;
 }
 
 .nav .link:hover {
@@ -100,7 +100,7 @@
 }
 
 @media (max-width: 800px) {
-  .menu_button, .join_discord_btn, .discord_logo {
+  .menu_button {
     font-size: large;
   }
 
