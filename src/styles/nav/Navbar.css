@@ -1,8 +1,8 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 2em 10em;
-  border-bottom: 1px solid;
+  padding: 2em 10%;
+  border-bottom: 1px solid var(--header-color);
 }
 
 .logo {
@@ -13,16 +13,112 @@
 .nav {
   display: inherit;
   gap: 2em;
+  transition: opacity .3s linear;
+}
+
+.hidden_el {
+  opacity: 0;
+}
+
+.menu_button {
+  display: none;
+}
+
+.nav, .menu_button {
+  margin-left: auto;
+  margin-right: 2em;
+}
+
+.nav .link {
+  border-bottom: 1px solid transparent;
+  transition: border-color .5s ease-in-out;
+}
+
+.nav .link, .join_discord_btn{
+  opacity: .85;
 }
 
 .join_discord_btn {
   background-color: #5865f2;
   color: white;
-  padding: 1em 2em;
+  padding: .9em;
   border-radius: 10px;
-  opacity: .9;
+  transition: opacity .5s;
+  font-size: large;
 }
 
-.join_discord_btn:hover {
+.discord_logo {
+  margin-right: .75rem;
+}
+
+.nav .link:hover {
+  border-color: var(--header-color);
+}
+
+.nav .link:hover, .join_discord_btn:hover {
   opacity: 1;
+}
+
+@media (max-width: 1300px) {
+  .header {
+    padding: 2em 5%;
+  }
+}
+
+@media (max-width: 1140px) {
+  .menu_button{
+    display: inherit;
+    font-size: x-large;
+    background-color: lightslategrey;
+    padding: .5em;
+    margin-top: -.5em;
+    border-radius: 5px;
+    align-items: center;
+  }
+
+  .menu_icon {
+    aspect-ratio: 1 / 1;
+  }
+
+  .nav {
+    flex-direction: column;
+    position: absolute;
+    margin-top: 3.9em;
+    margin-right: 0;
+    padding: 2em 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0px 15px 30px -15px rgba(0, 0, 0, 1);
+  }
+
+  .nav .link {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .menu_button {
+    font-size: large;
+  }
+
+  .discord_logo {
+    margin: 0;
+  }
+
+  .join_discord_text {
+    display: none;
+  }
+
+  .join_discord_btn {
+    padding: .6em;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu_button {
+    margin-right: 1em;
+  }
 }
